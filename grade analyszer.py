@@ -36,7 +36,7 @@ avg, med, highest, lowest = statistics(marks)
 
 grades = {name: assign_grade(score) for name, score in students.items()}
 passed = [name for name, score in students.items() if score >= 40]
-failed = [name for name, score in students.items() if score < 40]
+failed = [name for name, score in students.items() if score <= 40]
 
 print("Name\t\tMarks\t\tGrade")
 print("-" * 38)
